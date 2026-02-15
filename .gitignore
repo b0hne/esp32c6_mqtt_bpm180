@@ -1,55 +1,45 @@
-# Prerequisites
-*.d
+# ESP-IDF build output
+/build/
+/build_*/
+/sdkconfig
+/sdkconfig.old
 
-# Object files
-*.o
-*.ko
-*.obj
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Ninja
+.ninja_log
+.ninja_deps
+
+# IDF generated files
+flasher_args.json
+project_description.json
+partition_table/
+bootloader/
+
+# VS Code
+.vscode/
+
+# CLion
+.idea/
+
+# Mac
+.DS_Store
+
+# Linux temp
+*~
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Binaries
+*.bin
 *.elf
-
-# Linker output
-*.ilk
 *.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
